@@ -1,7 +1,7 @@
 // Dados do Herói
 let heroiNome = "Finn"
 let heroiHp = 50
-let heroiAtaque = 6
+let heroiAtaque = 999
 
 // Dados do Monstro
 let monstroNome = "Hunson Abadeer"
@@ -17,7 +17,7 @@ let danoCausado = heroiAtaque - monstroDefesa
 if (danoCausado <= 0) {
     console.log(` O ${monstroNome} defendeu o golpe! Nenhum dano causado.`)
 } else {
-    monstroHp = monstroHp - danoCausado
+    monstroHp = monstroHp - danoCausado;
     console.log(` ${heroiNome} atacou com sucesso! Causou ${danoCausado} de dano.`)
 }
 
@@ -32,7 +32,7 @@ if (monstroHp <= 0) {
     } else if (monstroNivel === "Elite") {
         console.log(" Recompensa: 50 Moedas de Ouro + Poção de Vida.")
     } else if (monstroNivel === "Chefe") {
-        console.log(" RECOMPENSA LENDÁRIA: 200 Moedas + Espada de sangue de demonio! ")
+        console.log(" RECOMPENSA LENDÁRIA: 200 Moedas + Espada de Sangue de demonio! ")
     }
 
 } else {
