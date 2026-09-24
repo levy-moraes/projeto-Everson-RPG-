@@ -1,15 +1,37 @@
 // Dados do Herói
-let heroiNome = "Finn"
+let heroiNome = "joao gabriel"
 let heroiHp = 50
-let heroiAtaque = 999
+let heroiAtaque = 15
 
 // Dados do Monstro
-let monstroNome = "Hunson Abadeer"
+let monstroNome = "everson do mal"
 let monstroHp = 25
 let monstroDefesa = 10
 let monstroNivel = "Chefe"
 
-console.log(` Batalha Iniciada: ${heroiNome} VS ${monstroNome} `)
+console.log(`
+ Batalha Iniciada: ${heroiNome} VS ${monstroNome}
+      `)
+
+
+
+
+let resumo = `
+ ================================
+ Nome = ${heroiNome}
+ Hp = ${heroiHp}
+ Ataque = ${heroiAtaque}
+ ================================
+
+ ================================
+ Nome = ${monstroNome}
+ Hp = ${monstroHp}
+ Defesa = ${monstroDefesa}
+ Nivel = ${monstroNivel}
+ ===============================
+
+`
+console.log(resumo)
 
 // 1. CÁLCULO DO ATAQUE DO HERÓI
 let danoCausado = heroiAtaque - monstroDefesa
@@ -32,7 +54,7 @@ if (monstroHp <= 0) {
     } else if (monstroNivel === "Elite") {
         console.log(" Recompensa: 50 Moedas de Ouro + Poção de Vida.")
     } else if (monstroNivel === "Chefe") {
-        console.log(" RECOMPENSA LENDÁRIA: 200 Moedas + Espada de Sangue de demonio! ")
+        console.log(" RECOMPENSA LENDÁRIA: 200 Moedas + 32GB RAM ")
     }
 
 } else {
@@ -47,3 +69,4 @@ if (monstroHp <= 0) {
         console.log(` ${heroiNome} resistiu ao golpe! HP restante: ${heroiHp}`)
     }
 }
+
