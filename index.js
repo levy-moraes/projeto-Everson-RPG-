@@ -4,7 +4,7 @@ let heroiHp = 50
 let heroiAtaque = 15
 
 // Dados do Monstro
-let monstroNome = "everson do mal"
+let monstroNome = "murilo do mal"
 let monstroHp = 25
 let monstroDefesa = 10
 let monstroNivel = "Chefe"
@@ -12,9 +12,6 @@ let monstroNivel = "Chefe"
 console.log(`
  Batalha Iniciada: ${heroiNome} VS ${monstroNome}
       `)
-
-
-
 
 let resumo = `
  ================================
@@ -47,7 +44,7 @@ if (danoCausado <= 0) {
 if (monstroHp <= 0) {
     console.log(` O ${monstroNome} foi derrotado!`)
     
-    // 3. DISTRIBUIÇÃO DE RECOMPENSAS (IF ANINHADO)
+    // 3. DISTRIBUIÇÃO DE RECOMPENSAS
     console.log(" Calculando Recompensas...")
     if (monstroNivel === "Comum") {
         console.log(" Recompensa: 10 Moedas de Ouro.")
